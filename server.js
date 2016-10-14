@@ -10,7 +10,8 @@ app.get('/', function (req, res) {
 });
 
 app.get('/rohit', function (req, res) {
-  res.send("u are in /rohit url");
+  res.sendFile(path.join(__dirname, 'ui', 'article1.html'));
+
 });
 
 app.get('/ui/style.css', function (req, res) {
